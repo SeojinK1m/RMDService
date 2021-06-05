@@ -21,5 +21,5 @@ class SchoolsViewset(viewsets.ModelViewSet):
 class ReviewViewset(viewsets.ModelViewSet):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
-    search_fields = ['eatery']
+    search_fields = ['eatery__id']
     filter_backends = (filters.SearchFilter,)
