@@ -22,3 +22,4 @@ class ReviewViewset(viewsets.ModelViewSet):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
     lookup_field = 'id'
+    search_fields = ['eatery']
