@@ -17,7 +17,6 @@ class SchoolsViewset(viewsets.ModelViewSet):
     search_fields = ['name', 'url']
     filter_backends = (filters.SearchFilter,)
 
-
 class ReviewViewset(viewsets.ModelViewSet):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
